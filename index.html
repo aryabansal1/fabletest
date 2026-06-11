@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiny Games</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 36px;
+    background: linear-gradient(180deg, #070b18 0%, #101a33 100%);
+    font-family: ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #e8eeff; padding: 40px 20px;
+  }
+  h1 { font-size: 30px; letter-spacing: 6px; font-weight: 800;
+    background: linear-gradient(135deg, #9db8ff, #ffd166);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .sub { font-size: 13px; letter-spacing: 2px; opacity: 0.55; margin-top: -26px; }
+  .cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+  a.card {
+    display: block; width: 280px; padding: 26px 28px; text-decoration: none;
+    color: inherit; border-radius: 18px; border: 1px solid rgba(140,170,255,0.2);
+    background: rgba(255,255,255,0.04);
+    transition: transform 0.15s, background 0.15s, border-color 0.15s;
+  }
+  a.card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.08);
+    border-color: rgba(140,170,255,0.5); }
+  .card .icon { font-size: 40px; margin-bottom: 12px; }
+  .card h2 { font-size: 19px; letter-spacing: 2px; margin-bottom: 8px; }
+  .card p { font-size: 13.5px; line-height: 1.55; opacity: 0.7; }
+  .card .play { display: inline-block; margin-top: 14px; font-size: 12px;
+    letter-spacing: 2px; color: #ffd166; }
+</style>
+</head>
+<body>
+  <h1>TINY GAMES</h1>
+  <div class="sub">TWO LITTLE WORLDS · NO INSTALL · JUST PLAY</div>
+  <div class="cards">
+    <a class="card" href="orbit-golf.html">
+      <div class="icon">🪐</div>
+      <h2>ORBIT GOLF</h2>
+      <p>Sling a ball through space and let planetary gravity curve your shot.
+         Ten procedurally generated holes, par scoring, and a dotted line that
+         never lies.</p>
+      <span class="play">PLAY ▸</span>
+    </a>
+    <a class="card" href="world.html">
+      <div class="icon">🌷</div>
+      <h2>WANDERLAND</h2>
+      <p>A cozy side-scrolling world to explore and decorate. Stroll through
+         meadows, autumn woods, snowy peaks and sunny shores — plant flowers,
+         hang lanterns, watch the sun set.</p>
+      <span class="play">PLAY ▸</span>
+    </a>
+  </div>
+</body>
+</html>
